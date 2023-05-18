@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Signin</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+        <div style="padding-left: 20px;">
+          <a class="navbar-brand" href="#">
+            <img src="../static/images/ON_SHOP_LOGO.png" alt="" width="100">
+          </a>
+        </div>
+        <div style="padding-right: 20px;">
+        <a href="../template/Sign_up.html" class="btn btn-outline-success" role="button" aria-disabled="true">Sign Up</a>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <div class="container" style="text-align:center">
+        <h1 class="display-1">You are now in the sign-in page</h1>
+    </div>
+    <div class="container" style="text-align:right; padding:20px">
+        <a href="../template/Sign_up.html" class="btn btn-primary btn-md" tabindex="-1" role="button" aria-disabled="true">New to the place..!!</a>
+    </div>
+    <div class="container" style="padding:20px">
+        <form action="/signin_form" method="post">
+            <div class="mb-3">
+                    <label for="signin_username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="signin_username" aria-describedby="userName">
+                    <div id="signin_username" class="form-text">enter your username</div>
+            </div>
+            <div class="mb-3">
+                  <label for="signin_email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="signin_email" name="signin_email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Main_shop_page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="../static/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+        <div style="padding-left: 20px;">
+          <a class="navbar-brand" href="#">
+            <img src="../static/images/ON_SHOP_LOGO.png" alt="" width="100">
+          </a>
+        </div>
+        <div style="padding-right: 20px;">
+            {% if session.get('signed_up') %}
+              <button class="btn btn-outline-success" disabled>Already signed up</button>
+            {% else %}
+              <a href="../template/Sign_up.html" class="btn btn-outline-success" role="button" aria-disabled="true">Sign Up</a>
+            {% endif %}
+        </div>
+      </nav>
+  </header>
+  <main>
+    <div class="container" style="padding:20px">
+      hello {{username}},
+        <h1 class="display-1"> Welcome to our Shop </h1>
+        <h4 class="diaplay-4">This ia a online shop dedicated to provide you the best out of the market
+            and at the best possible price tag.
+        </h4>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="https://i.pinimg.com/564x/ed/11/a6/ed11a6359c1ca43f4f3c52cda1bf9d5f.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">strawberry choco</h5>
+                  <p class="card-text">Chocolate with a taste of strawberry essence</p>
+                  <a href="../templates" class="btn btn-outline-success" role="button" aria-disabled="true">buy the item</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://i.pinimg.com/564x/c5/f3/cd/c5f3cdbad445d2adfadc544e56d2ff71.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dark fantacy</h5>
+                  <p class="card-text">Enjoy the Smoothness of chocolate with chrispy cookies</p>
+                  <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy the item</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://i.pinimg.com/564x/fb/61/99/fb61991fba2d8cdcd460c4b68cb40e03.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chocobars</h5>
+                  <p class="card-text">Melt with the chilling essence of chocolate</p>
+                  <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy the item</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://i.pinimg.com/564x/d9/45/11/d94511d3be5e480c42699fcd46d4ba76.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pastry</h5>
+                  <p class="card-text">float into the essence of chocolate dipped in the delicious layer of soft cake</p>
+                  <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy the item</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <img src="https://i.pinimg.com/564x/fb/33/b8/fb33b80b3a877fd7a83ef6bc6aa9be17.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Choco-vanilla cubes</h5>
+                    <p class="card-text">Want to pass time with some sweet garnished cubes</p>
+                    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy the item</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://i.pinimg.com/564x/bb/ee/48/bbee4866064c2c4e2e0f95067c0c95e6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Vanilla bars</h5>
+                    <p class="card-text"> Enough chocolates have some vanilla for change </p>
+                    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Buy the item</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+  </main>
+  <footer class="footer-07">
+    <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-md-12 text-center">
+    <h2 class="footer-heading"><a href="../template/index.html" class="logo">Onshop.com</a></h2>
+    <p class="menu">
+    <a href="../template/index.html">Home</a>
+    <a href="#">Agent</a>
+    <a href="#">About</a>
+    <a href="#">Listing</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+    </p>
+    </div>
+    </div>
+    <div class="row mt-5">
+    <div class="col-md-12 text-center">
+    <p class="copyright">
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by Ranit Sarkar
+    </p>
+    </div>
+    </div>
+    </div>
+    </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
