@@ -24,7 +24,7 @@ def hello_world():
 def Sign_up():
     return render_template('Sign_up.html',usern="type your a suitable username here")
 
-@app.route('/template/Sign_in.html')
+@app.route('/templates/Sign_in.html')
 def Sign_in():
     return render_template('Sign_in.html')
 

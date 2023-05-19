@@ -23,7 +23,7 @@
           </a>
         </div>
         <div style="padding-right: 20px;">
-        <a href="../template/Sign_in.html" class="btn btn-outline-success" role="button" aria-disabled="true">Sign In</a>
+        <a href="../templates/Sign_in.html" class="btn btn-outline-success" role="button" aria-disabled="true">Sign In</a>
         </div>
       </nav>
   </header>
@@ -32,14 +32,14 @@
         <h1 class="display-1">You are diverted to the sign-up page</h1>
     </div>
     <div class="container" style="text-align:right; padding:20px">
-        <a href="../template/Sign_in.html" class="btn btn-primary btn-md" tabindex="-1" role="button" aria-disabled="true">Already a beneficiary</a>
+        <a href="../templates/Sign_in.html" class="btn btn-primary btn-md" tabindex="-1" role="button" aria-disabled="true">Already a beneficiary</a>
     </div>
     <div class="container" style="padding:20px">
       <form action="/username_avilability" method="post">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
             <input type="text" class="form-control" id="username" name="username" aria-describedby="username" value="{{ usern }}">
-            <div id="username" class="form-text">{% if usern=="" %}Choose a unique name {% elif usern=="type your a suitable username here" %}Choose a unique name
+            <div id="usrname" class="form-text">{% if usern=="" %}Choose a unique name {% elif usern=="type your a suitable username here" %}Choose a unique name
               {% else %} that's fine {% endif %}</div>
         </div>
         <button type="submit" class="btn btn-primary">Check availability</button>
@@ -48,7 +48,7 @@
         <div class="mb-3">
           <label for="Phonenumber" class="form-label">Phone number</label>
           <input type="number" class="form-control" id="phonenumber" name="phonenumber" aria-describedby="phonenumber">
-          <div id="phonenumber" class="form-text">Some things are secret</div>
+          <div id="phnumber" class="form-text">Some things are secret</div>
         </div>
         <div class="mb-3">
           <label for="InputEmail1" class="form-label">Email address</label>
@@ -67,9 +67,9 @@
     <div class="container">
     <div class="row justify-content-center">
     <div class="col-md-12 text-center">
-    <h2 class="footer-heading"><a href="../template/index.html" class="logo">Onshop.com</a></h2>
+    <h2 class="footer-heading"><a href="../templates/index.html" class="logo">Onshop.com</a></h2>
     <p class="menu">
-    <a href="../template/index.html">Home</a>
+    <a href="../templates/index.html">Home</a>
     <a href="#">Agent</a>
     <a href="#">About</a>
     <a href="#">Listing</a>
